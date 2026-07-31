@@ -168,9 +168,8 @@ function Epk() {
           <Reveal delay={80}>
             <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
               <p>
-                DJ Buba brings a uniquely sophisticated approach to the decks, backed by 6 years of
-                professional DJing experience—including 4 years deeply rooted in Koh Samui's
-                thriving music scene. Having played bass guitar in a band from the age of 15, his
+                DJ Buba brings a uniquely sophisticated approach to the decks, backed by professional
+                DJing experience since 2020 — including residencies on Koh Samui since 2022. His
                 comprehensive mastery of music theory and harmonic composition sets him apart in the
                 modern electronic scene. Combining this technical precision with years of active
                 performance, Buba is renowned for crafting flawlessly smooth, harmonically aligned
@@ -186,10 +185,8 @@ function Epk() {
           <Reveal delay={160}>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { k: "6+", v: "Years DJing" },
-                { k: "4", v: "Years Koh Samui" },
-                { k: "15", v: "Age started bass" },
-                { k: "7", v: "Venue residencies" },
+                { k: "2020", v: "Started DJing" },
+                { k: "2022", v: "On Koh Samui" },
               ].map((s) => (
                 <div key={s.v} className="surface-card rounded-2xl p-5">
                   <p className="font-display text-3xl font-extrabold text-primary">{s.k}</p>
