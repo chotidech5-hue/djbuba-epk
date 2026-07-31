@@ -275,6 +275,69 @@ function Epk() {
         </div>
       </section>
 
+      {/* GALLERY */}
+      <section id="gallery" className="mx-auto max-w-6xl scroll-mt-16 px-5 py-24 sm:px-8">
+        <Reveal>
+          <SectionTitle label="On the decks" title="Live Gallery" />
+        </Reveal>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {LIVE.map((img, i) => (
+            <Reveal key={img.src} delay={60 * i}>
+              <div className="group overflow-hidden rounded-2xl border border-border">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="aspect-[3/4] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <div className="mt-16">
+          <Reveal>
+            <SectionTitle label="Events" title="Flyers & Promo" />
+          </Reveal>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {FLYERS.map((img, i) => (
+              <Reveal key={img.src} delay={60 * i}>
+                <div className="surface-card overflow-hidden rounded-2xl p-3">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    className="w-full rounded-xl object-contain"
+                  />
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <Reveal>
+            <SectionTitle label="Press" title="Press Photos" />
+          </Reveal>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[press1, press2].map((p, i) => (
+              <Reveal key={p.url} delay={60 * i}>
+                <div className="overflow-hidden rounded-2xl border border-border">
+                  <img
+                    src={p.url}
+                    alt="DJ Buba press portrait"
+                    loading="lazy"
+                    className="aspect-[3/4] w-full object-cover"
+                  />
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
       {/* LISTEN */}
       <section id="listen" className="mx-auto max-w-6xl scroll-mt-16 px-5 py-24 sm:px-8">
         <Reveal>
