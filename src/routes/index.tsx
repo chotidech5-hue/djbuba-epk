@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Instagram, Mail, MessageCircle, ArrowUpRight, Disc3 } from "lucide-react";
-import heroImg from "@/assets/hero-dj.jpg";
 import { Reveal } from "@/components/Reveal";
 import { AudioPlayer } from "@/components/AudioPlayer";
 
