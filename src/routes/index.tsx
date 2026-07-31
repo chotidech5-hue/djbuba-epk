@@ -2,6 +2,28 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Instagram, Mail, MessageCircle, ArrowUpRight, Disc3 } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { AudioPlayer } from "@/components/AudioPlayer";
+import live1 from "@/assets/buba-2.png.asset.json";
+import live2 from "@/assets/buba-3.png.asset.json";
+import live3 from "@/assets/buba-4.png.asset.json";
+import flyer1 from "@/assets/buba-5.png.asset.json";
+import flyer2 from "@/assets/buba-6.png.asset.json";
+import flyer3 from "@/assets/buba-7.png.asset.json";
+import press1 from "@/assets/buba-8.png.asset.json";
+import press2 from "@/assets/buba-9.png.asset.json";
+import logo from "@/assets/buba-10.png.asset.json";
+
+const LIVE = [
+  { src: live1.url, alt: "DJ Buba playing at Love Beach Club" },
+  { src: live2.url, alt: "DJ Buba on the decks at night" },
+  { src: live3.url, alt: "DJ Buba at #Love Beach Club neon booth" },
+];
+
+const FLYERS = [
+  { src: flyer1.url, alt: "Love Rosé Saturdays flyer" },
+  { src: flyer2.url, alt: "ARKbar Beach Club pool party flyer" },
+  { src: flyer3.url, alt: "Radio Samui Open Deck at Black Box flyer" },
+];
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -117,6 +139,12 @@ function Epk() {
     <main className="min-h-screen bg-background">
       {/* HERO */}
       <section className="relative isolate flex min-h-[92vh] items-end overflow-hidden border-b border-border">
+        <img
+          src={live2.url}
+          alt="DJ Buba performing on Koh Samui"
+          className="absolute inset-0 h-full w-full object-cover object-top opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/40" />
         <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_50%_0%,color-mix(in_oklab,var(--gold)_10%,transparent),transparent_70%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(70%_50%_at_10%_100%,color-mix(in_oklab,var(--cyan)_10%,transparent),transparent_70%)]" />
         <div className="pointer-events-none absolute inset-0 opacity-[0.07] bg-[repeating-linear-gradient(90deg,var(--foreground)_0_1px,transparent_1px_120px)]" />
@@ -124,10 +152,16 @@ function Epk() {
 
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-16 sm:px-8 sm:pb-24">
           <Reveal>
+            <img
+              src={logo.url}
+              alt="BUBA logo"
+              className="mb-6 h-16 w-auto rounded-md border border-border/60 sm:h-20"
+            />
             <p className="section-label">Electronic Press Kit</p>
             <h1 className="mt-4 text-[3.5rem] font-extrabold uppercase leading-[0.85] sm:text-8xl md:text-[9rem]">
               <span className="text-gradient-gold">DJ Buba</span>
             </h1>
+
             <p className="mt-5 max-w-xl font-display text-sm uppercase tracking-[0.3em] text-foreground/80 sm:text-base">
               Harmony, Groove &amp; Seamless Flow
             </p>
@@ -183,20 +217,30 @@ function Epk() {
             </div>
           </Reveal>
           <Reveal delay={160}>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { k: "2020", v: "Started DJing" },
-                { k: "2022", v: "On Koh Samui" },
-              ].map((s) => (
-                <div key={s.v} className="surface-card rounded-2xl p-5">
-                  <p className="font-display text-3xl font-extrabold text-primary">{s.k}</p>
-                  <p className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">
-                    {s.v}
-                  </p>
-                </div>
-              ))}
+            <div className="space-y-4">
+              <div className="overflow-hidden rounded-2xl border border-border">
+                <img
+                  src={press1.url}
+                  alt="DJ Buba press portrait in black shirt"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { k: "2020", v: "Started DJing" },
+                  { k: "2022", v: "On Koh Samui" },
+                ].map((s) => (
+                  <div key={s.v} className="surface-card rounded-2xl p-5">
+                    <p className="font-display text-3xl font-extrabold text-primary">{s.k}</p>
+                    <p className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">
+                      {s.v}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </Reveal>
+
         </div>
       </section>
 
@@ -230,6 +274,69 @@ function Epk() {
           </div>
         </div>
       </section>
+
+      {/* GALLERY */}
+      <section id="gallery" className="mx-auto max-w-6xl scroll-mt-16 px-5 py-24 sm:px-8">
+        <Reveal>
+          <SectionTitle label="On the decks" title="Live Gallery" />
+        </Reveal>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {LIVE.map((img, i) => (
+            <Reveal key={img.src} delay={60 * i}>
+              <div className="group overflow-hidden rounded-2xl border border-border">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="aspect-[3/4] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <div className="mt-16">
+          <Reveal>
+            <SectionTitle label="Events" title="Flyers & Promo" />
+          </Reveal>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {FLYERS.map((img, i) => (
+              <Reveal key={img.src} delay={60 * i}>
+                <div className="surface-card overflow-hidden rounded-2xl p-3">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    className="w-full rounded-xl object-contain"
+                  />
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <Reveal>
+            <SectionTitle label="Press" title="Press Photos" />
+          </Reveal>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[press1, press2].map((p, i) => (
+              <Reveal key={p.url} delay={60 * i}>
+                <div className="overflow-hidden rounded-2xl border border-border">
+                  <img
+                    src={p.url}
+                    alt="DJ Buba press portrait"
+                    loading="lazy"
+                    className="aspect-[3/4] w-full object-cover"
+                  />
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
 
       {/* LISTEN */}
       <section id="listen" className="mx-auto max-w-6xl scroll-mt-16 px-5 py-24 sm:px-8">
