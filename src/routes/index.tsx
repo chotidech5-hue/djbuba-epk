@@ -20,7 +20,6 @@ const LIVE = [
 
 const FLYERS = [
   { src: flyer1.url, alt: "Love Rosé Saturdays flyer" },
-  { src: flyer2.url, alt: "ARKbar Beach Club pool party flyer" },
   { src: flyer3.url, alt: "Radio Samui Open Deck at Black Box flyer" },
 ];
 
