@@ -175,3 +175,20 @@
 .reveal.is-visible {
   animation: reveal-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 9999px;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--gold) 22%, transparent);
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  border: none;
+  border-radius: 9999px;
+  background: var(--gold);
+}
