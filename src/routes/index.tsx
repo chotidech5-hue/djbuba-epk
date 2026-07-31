@@ -6,7 +6,6 @@ import live1 from "@/assets/buba-2.png.asset.json";
 import live2 from "@/assets/buba-3.png.asset.json";
 import live3 from "@/assets/buba-4.png.asset.json";
 import flyer1 from "@/assets/buba-5.png.asset.json";
-import flyer2 from "@/assets/buba-6.png.asset.json";
 import flyer3 from "@/assets/buba-7.png.asset.json";
 import press1 from "@/assets/buba-8.png.asset.json";
 import press2 from "@/assets/buba-9.png.asset.json";
