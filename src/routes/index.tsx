@@ -31,11 +31,11 @@ export const Route = createFileRoute("/")({
         content:
           "Official EPK of DJ BUBA — Koh Samui based DJ playing Afro House, Melodic House & Techno, Progressive House and Indie Dance. Bio, residencies, demo sets and bookings.",
       },
-      { property: "og:title", content: "DJ BUBA — Electronic Press Kit" },
+      { property: "og:title", content: "DJ BUBA — Electronic Press Kit | Afro House & Melodic Techno" },
       {
         property: "og:description",
         content:
-          "Harmony, groove & seamless flow. Residencies, demo sets and booking info for DJ BUBA, Koh Samui.",
+          "Official EPK of DJ BUBA — Koh Samui based DJ playing Afro House, Melodic House & Techno, Progressive House and Indie Dance. Bio, residencies, demo sets and bookings.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
