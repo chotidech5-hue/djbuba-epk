@@ -91,8 +91,8 @@ const CONTACTS = [
   {
     icon: Instagram,
     label: "Instagram",
-    value: "@bubaknow.wav",
-    href: "https://instagram.com/bubaknow.wav",
+    value: "@knowbuba.wav",
+    href: "https://www.instagram.com/knowbuba.wav/",
   },
   {
     icon: Mail,
