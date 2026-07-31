@@ -2,6 +2,28 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Instagram, Mail, MessageCircle, ArrowUpRight, Disc3 } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { AudioPlayer } from "@/components/AudioPlayer";
+import live1 from "@/assets/buba-2.png.asset.json";
+import live2 from "@/assets/buba-3.png.asset.json";
+import live3 from "@/assets/buba-4.png.asset.json";
+import flyer1 from "@/assets/buba-5.png.asset.json";
+import flyer2 from "@/assets/buba-6.png.asset.json";
+import flyer3 from "@/assets/buba-7.png.asset.json";
+import press1 from "@/assets/buba-8.png.asset.json";
+import press2 from "@/assets/buba-9.png.asset.json";
+import logo from "@/assets/buba-10.png.asset.json";
+
+const LIVE = [
+  { src: live1.url, alt: "DJ Buba playing at Love Beach Club" },
+  { src: live2.url, alt: "DJ Buba on the decks at night" },
+  { src: live3.url, alt: "DJ Buba at #Love Beach Club neon booth" },
+];
+
+const FLYERS = [
+  { src: flyer1.url, alt: "Love Rosé Saturdays flyer" },
+  { src: flyer2.url, alt: "ARKbar Beach Club pool party flyer" },
+  { src: flyer3.url, alt: "Radio Samui Open Deck at Black Box flyer" },
+];
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
