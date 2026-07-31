@@ -9,7 +9,6 @@ import flyer1 from "@/assets/buba-5.png.asset.json";
 import flyer3 from "@/assets/buba-7.png.asset.json";
 import press1 from "@/assets/buba-8.png.asset.json";
 import press2 from "@/assets/buba-9.png.asset.json";
-import logo from "@/assets/buba-10.png.asset.json";
 
 const LIVE = [
   { src: live1.url, alt: "DJ Buba playing at Love Beach Club" },
@@ -150,11 +149,6 @@ function Epk() {
 
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-16 sm:px-8 sm:pb-24">
           <Reveal>
-            <img
-              src={logo.url}
-              alt="BUBA logo"
-              className="mb-6 h-16 w-auto rounded-md border border-border/60 sm:h-20"
-            />
             <p className="section-label">Electronic Press Kit</p>
             <h1 className="mt-4 text-[3.5rem] font-extrabold uppercase leading-[0.85] sm:text-8xl md:text-[9rem]">
               <span className="text-gradient-gold">DJ Buba</span>
