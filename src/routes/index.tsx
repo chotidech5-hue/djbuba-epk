@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Instagram, Mail, MessageCircle, ArrowUpRight, Disc3 } from "lucide-react";
-import heroImg from "@/assets/hero-dj.jpg";
 import { Reveal } from "@/components/Reveal";
 import { AudioPlayer } from "@/components/AudioPlayer";
 
@@ -117,16 +116,11 @@ function Epk() {
   return (
     <main className="min-h-screen bg-background">
       {/* HERO */}
-      <section className="relative isolate flex min-h-[92vh] items-end overflow-hidden">
-        <img
-          src={heroImg}
-          alt="DJ Buba performing at a beach club at night"
-          width={1920}
-          height={1280}
-          className="absolute inset-0 h-full w-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(to_top,var(--background),transparent_55%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_100%,color-mix(in_oklab,var(--gold)_12%,transparent),transparent)]" />
+      <section className="relative isolate flex min-h-[92vh] items-end overflow-hidden border-b border-border">
+        <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_50%_0%,color-mix(in_oklab,var(--gold)_10%,transparent),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(70%_50%_at_10%_100%,color-mix(in_oklab,var(--cyan)_10%,transparent),transparent_70%)]" />
+        <div className="pointer-events-none absolute inset-0 opacity-[0.07] bg-[repeating-linear-gradient(90deg,var(--foreground)_0_1px,transparent_1px_120px)]" />
+
 
         <div className="relative mx-auto w-full max-w-6xl px-5 pb-16 sm:px-8 sm:pb-24">
           <Reveal>
