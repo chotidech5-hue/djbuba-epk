@@ -5,21 +5,21 @@ import { AudioPlayer } from "@/components/AudioPlayer";
 import live1 from "@/assets/buba-2.png.asset.json";
 import live2 from "@/assets/buba-3.png.asset.json";
 import live3 from "@/assets/buba-4.png.asset.json";
+import live4 from "@/assets/buba-live-11.jpg.asset.json";
+import live5 from "@/assets/buba-live-12.jpg.asset.json";
 import flyer1 from "@/assets/buba-5.png.asset.json";
-import flyer3 from "@/assets/buba-7.png.asset.json";
 import press1 from "@/assets/buba-8.png.asset.json";
-import press2 from "@/assets/buba-9.png.asset.json";
 
 const LIVE = [
   { src: live1.url, alt: "DJ Buba playing at Love Beach Club" },
   { src: live2.url, alt: "DJ Buba on the decks at night" },
   { src: live3.url, alt: "DJ Buba at #Love Beach Club neon booth" },
+  { src: live4.url, alt: "DJ Buba mixing under red club lights" },
+  { src: live5.url, alt: "DJ Buba behind the Pioneer DJ controller" },
 ];
 
-const FLYERS = [
-  { src: flyer1.url, alt: "Love Rosé Saturdays flyer" },
-  { src: flyer3.url, alt: "Radio Samui Open Deck at Black Box flyer" },
-];
+const FLYERS = [{ src: flyer1.url, alt: "Love Rosé Saturdays flyer" }];
+
 
 
 export const Route = createFileRoute("/")({
