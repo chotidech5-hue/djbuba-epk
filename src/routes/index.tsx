@@ -361,6 +361,28 @@ function Epk() {
               src="https://www.dropbox.com/scl/fi/l5w92t8wh0r2nkjor9eix/Recomend-Afro-house-demo-Emotional-African-afro-sunset.wav?rlkey=k68qr257felbbcues1jkxreq6&st=mjgfo35l&raw=1"
             />
           </Reveal>
+          <Reveal delay={200}>
+            <AudioPlayer
+              title="Demo High Energy Afro"
+              subtitle="Afro House Fire Show"
+              src="https://www.dropbox.com/scl/fi/hcq61jpxgcdzj5d07geds/Afro-house-fire-show.mp3?rlkey=qpokb5hed1vdxn5jvfjz72zyx&raw=1"
+            />
+          </Reveal>
+          <Reveal delay={260}>
+            <AudioPlayer
+              title="Day Set Afro"
+              subtitle="Afro House Day Time — DJ Buba Demo"
+              src="https://www.dropbox.com/scl/fi/8nifvgrik4ydtq53hdoki/afro-house-day-time-DJ-Buba-Demo.mp3?rlkey=15p7sb5siqmt543wwftmr412a&raw=1"
+            />
+          </Reveal>
+          <Reveal delay={320}>
+            <AudioPlayer
+              title="Deep House Demo"
+              subtitle="Deep House — Buba"
+              src="https://www.dropbox.com/scl/fi/7qdcc0lsmso3gmpvt2s53/Deep-House-Buba.mp3?rlkey=t9fa7awd7ovz2tozoslr6uhal&raw=1"
+            />
+          </Reveal>
+
         </div>
         <Reveal delay={200}>
           <div className="mt-8 flex justify-center">
