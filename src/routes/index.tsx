@@ -330,24 +330,6 @@ function Epk() {
           <SectionTitle label="Sound" title="Listen / Demo Sets" />
         </Reveal>
         <div className="grid gap-6 lg:grid-cols-2">
-          <Reveal delay={60}>
-            <div className="surface-card rounded-2xl p-5 sm:p-6">
-              <p className="mb-4 font-display text-sm font-bold uppercase tracking-wider">
-                Featured Set
-              </p>
-              <iframe
-                scrolling="no"
-                title="DJ Buba featured set on hearthis.at"
-                style={{ borderRadius: "10px" }}
-                id="hearthis_at_track_14520297"
-                width="100%"
-                height={150}
-                src="https://app.hearthis.at/embed/14520297/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
-                frameBorder="0"
-                allow="autoplay"
-              />
-            </div>
-          </Reveal>
           <Reveal delay={140}>
             <AudioPlayer
               title="Demo Afro House"
