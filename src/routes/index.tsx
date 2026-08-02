@@ -18,7 +18,10 @@ const LIVE = [
   { src: live5.url, alt: "DJ Buba behind the Pioneer DJ controller" },
 ];
 
-const FLYERS = [{ src: flyer1.url, alt: "Love Rosé Saturdays flyer" }];
+const FLYERS = [
+  { src: flyer1.url, alt: "Love Rosé Saturdays flyer" },
+  { src: flyer2.url, alt: "Radio Samui Open Deck at Black Box flyer" },
+];
 
 
 
