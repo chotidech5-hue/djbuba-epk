@@ -217,19 +217,6 @@ function Epk() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { k: "2020", v: "Started DJing" },
-                  { k: "2022", v: "On Koh Samui" },
-                ].map((s) => (
-                  <div key={s.v} className="surface-card rounded-2xl p-5">
-                    <p className="font-display text-3xl font-extrabold text-primary">{s.k}</p>
-                    <p className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">
-                      {s.v}
-                    </p>
-                  </div>
-                ))}
-              </div>
             </div>
           </Reveal>
 
