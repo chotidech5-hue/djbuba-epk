@@ -5,21 +5,21 @@ import { AudioPlayer } from "@/components/AudioPlayer";
 import live1 from "@/assets/buba-2.png.asset.json";
 import live2 from "@/assets/buba-3.png.asset.json";
 import live3 from "@/assets/buba-4.png.asset.json";
+import live4 from "@/assets/buba-live-11.jpg.asset.json";
+import live5 from "@/assets/buba-live-12.jpg.asset.json";
 import flyer1 from "@/assets/buba-5.png.asset.json";
-import flyer3 from "@/assets/buba-7.png.asset.json";
 import press1 from "@/assets/buba-8.png.asset.json";
-import press2 from "@/assets/buba-9.png.asset.json";
 
 const LIVE = [
   { src: live1.url, alt: "DJ Buba playing at Love Beach Club" },
   { src: live2.url, alt: "DJ Buba on the decks at night" },
   { src: live3.url, alt: "DJ Buba at #Love Beach Club neon booth" },
+  { src: live4.url, alt: "DJ Buba mixing under red club lights" },
+  { src: live5.url, alt: "DJ Buba behind the Pioneer DJ controller" },
 ];
 
-const FLYERS = [
-  { src: flyer1.url, alt: "Love Rosé Saturdays flyer" },
-  { src: flyer3.url, alt: "Radio Samui Open Deck at Black Box flyer" },
-];
+const FLYERS = [{ src: flyer1.url, alt: "Love Rosé Saturdays flyer" }];
+
 
 
 export const Route = createFileRoute("/")({
@@ -217,19 +217,6 @@ function Epk() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { k: "2020", v: "Started DJing" },
-                  { k: "2022", v: "On Koh Samui" },
-                ].map((s) => (
-                  <div key={s.v} className="surface-card rounded-2xl p-5">
-                    <p className="font-display text-3xl font-extrabold text-primary">{s.k}</p>
-                    <p className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">
-                      {s.v}
-                    </p>
-                  </div>
-                ))}
-              </div>
             </div>
           </Reveal>
 
@@ -299,7 +286,7 @@ function Epk() {
                     src={img.src}
                     alt={img.alt}
                     loading="lazy"
-                    className="w-full rounded-xl object-contain"
+                    className="aspect-[4/5] w-full rounded-xl object-cover"
                   />
                 </div>
               </Reveal>
@@ -312,7 +299,7 @@ function Epk() {
             <SectionTitle label="Press" title="Press Photos" />
           </Reveal>
           <div className="grid gap-4 sm:grid-cols-2">
-            {[press1, press2].map((p, i) => (
+            {[press1].map((p, i) => (
               <Reveal key={p.url} delay={60 * i}>
                 <div className="overflow-hidden rounded-2xl border border-border">
                   <img
@@ -326,6 +313,7 @@ function Epk() {
             ))}
           </div>
         </div>
+
       </section>
 
 
@@ -361,6 +349,28 @@ function Epk() {
               src="https://www.dropbox.com/scl/fi/l5w92t8wh0r2nkjor9eix/Recomend-Afro-house-demo-Emotional-African-afro-sunset.wav?rlkey=k68qr257felbbcues1jkxreq6&st=mjgfo35l&raw=1"
             />
           </Reveal>
+          <Reveal delay={200}>
+            <AudioPlayer
+              title="Demo High Energy Afro"
+              subtitle="Afro House Fire Show"
+              src="https://www.dropbox.com/scl/fi/hcq61jpxgcdzj5d07geds/Afro-house-fire-show.mp3?rlkey=qpokb5hed1vdxn5jvfjz72zyx&raw=1"
+            />
+          </Reveal>
+          <Reveal delay={260}>
+            <AudioPlayer
+              title="Day Set Afro"
+              subtitle="Afro House Day Time — DJ Buba Demo"
+              src="https://www.dropbox.com/scl/fi/8nifvgrik4ydtq53hdoki/afro-house-day-time-DJ-Buba-Demo.mp3?rlkey=15p7sb5siqmt543wwftmr412a&raw=1"
+            />
+          </Reveal>
+          <Reveal delay={320}>
+            <AudioPlayer
+              title="Deep House Demo"
+              subtitle="Deep House — Buba"
+              src="https://www.dropbox.com/scl/fi/7qdcc0lsmso3gmpvt2s53/Deep-House-Buba.mp3?rlkey=t9fa7awd7ovz2tozoslr6uhal&raw=1"
+            />
+          </Reveal>
+
         </div>
         <Reveal delay={200}>
           <div className="mt-8 flex justify-center">
