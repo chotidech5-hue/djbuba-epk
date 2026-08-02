@@ -299,7 +299,7 @@ function Epk() {
                     src={img.src}
                     alt={img.alt}
                     loading="lazy"
-                    className="w-full rounded-xl object-contain"
+                    className="aspect-[4/5] w-full rounded-xl object-cover"
                   />
                 </div>
               </Reveal>
@@ -312,7 +312,7 @@ function Epk() {
             <SectionTitle label="Press" title="Press Photos" />
           </Reveal>
           <div className="grid gap-4 sm:grid-cols-2">
-            {[press1, press2].map((p, i) => (
+            {[press1].map((p, i) => (
               <Reveal key={p.url} delay={60 * i}>
                 <div className="overflow-hidden rounded-2xl border border-border">
                   <img
@@ -326,6 +326,7 @@ function Epk() {
             ))}
           </div>
         </div>
+
       </section>
 
 
