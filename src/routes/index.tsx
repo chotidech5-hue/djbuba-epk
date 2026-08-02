@@ -8,6 +8,7 @@ import live3 from "@/assets/buba-4.png.asset.json";
 import live4 from "@/assets/buba-live-11.jpg.asset.json";
 import live5 from "@/assets/buba-live-12.jpg.asset.json";
 import flyer1 from "@/assets/buba-5.png.asset.json";
+import flyer2 from "@/assets/buba-7.png.asset.json";
 import press1 from "@/assets/buba-8.png.asset.json";
 
 const LIVE = [
