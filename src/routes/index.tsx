@@ -198,17 +198,16 @@ function Epk() {
           <Reveal delay={80}>
             <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
               <p>
-                DJ Buba brings a uniquely sophisticated approach to the decks, backed by professional
-                DJing experience since 2020 — including residencies on Koh Samui since 2022. His
-                comprehensive mastery of music theory and harmonic composition sets him apart in the
-                modern electronic scene. Combining this technical precision with years of active
-                performance, Buba is renowned for crafting flawlessly smooth, harmonically aligned
-                transitions that make multiple tracks feel like one continuous, evolving journey.
+                DJ Buba has been professionally DJing since 2020 and has held resident DJ positions on
+                Koh Samui since 2022. His musical foundation began at the age of 15 through playing bass
+                guitar, giving him a solid understanding of music theory, rhythm, harmony, and song
+                structure. This background naturally influences his approach to harmonic mixing,
+                phrasing, and creating seamless transitions.
               </p>
               <p>
-                For Buba, DJing goes far beyond simply playing tracks—it is about curating emotions,
-                transmitting raw energy, and shaping the energy of the dancefloor with absolute
-                intention.
+                Specializing in House, Afro House, Indie Dance, Progressive House, and Melodic Techno,
+                Buba focuses on building emotional journeys that keep the dancefloor engaged from start
+                to finish.
               </p>
             </div>
           </Reveal>
