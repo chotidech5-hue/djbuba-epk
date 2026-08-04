@@ -297,26 +297,6 @@ function Epk() {
           </div>
         </div>
 
-        <div className="mt-16">
-          <Reveal>
-            <SectionTitle label="Press" title="Press Photos" />
-          </Reveal>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {[press1].map((p, i) => (
-              <Reveal key={p.url} delay={60 * i}>
-                <div className="overflow-hidden rounded-2xl border border-border">
-                  <img
-                    src={p.url}
-                    alt="DJ Buba press portrait"
-                    loading="lazy"
-                    className="aspect-[3/4] w-full object-cover"
-                  />
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-
       </section>
 
 
