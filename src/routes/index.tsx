@@ -309,16 +309,16 @@ function Epk() {
         <div className="grid gap-6 lg:grid-cols-2">
           <Reveal delay={140}>
             <AudioPlayer
-              title="Demo Afro House"
-              subtitle="Emotional African Afro Sunset"
-              src="https://www.dropbox.com/scl/fi/l5w92t8wh0r2nkjor9eix/Recomend-Afro-house-demo-Emotional-African-afro-sunset.wav?rlkey=k68qr257felbbcues1jkxreq6&st=mjgfo35l&raw=1"
+              title="Afro Short Demo"
+              subtitle="Afro House — DJ Buba"
+              src="https://www.dropbox.com/scl/fi/zqxduga9ep04gb4k0d1i2/Afro-short-Demo.mp3?rlkey=xiegb97n14663vi85ldvc2skw&st=rkrtxrvl&raw=1"
             />
           </Reveal>
           <Reveal delay={200}>
             <AudioPlayer
-              title="Demo High Energy Afro"
-              subtitle="Afro House Fire Show"
-              src="https://www.dropbox.com/scl/fi/hcq61jpxgcdzj5d07geds/Afro-house-fire-show.mp3?rlkey=qpokb5hed1vdxn5jvfjz72zyx&raw=1"
+              title="Indie Dance Short Demo"
+              subtitle="Indie Dance — DJ Buba"
+              src="https://www.dropbox.com/scl/fi/lrreylvfylfrtxo4y67pl/Indie-dance-short-demo.mp3?rlkey=haox9e0pdt13dm86iikmng7p3&st=vqjrfcb7&raw=1"
             />
           </Reveal>
           <Reveal delay={260}>
@@ -340,12 +340,12 @@ function Epk() {
         <Reveal delay={200}>
           <div className="mt-8 flex justify-center">
             <a
-              href="https://www.dropbox.com/scl/fo/ypk1ftfjqdb2m8o56tg4l/APpEJzhXPxqDs7dK-ptQaoM?rlkey=kkhqlh061isu3pp5s9u5xnx38&dl=0"
+              href="https://www.instagram.com/knowbuba.wav/"
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-8 py-4 text-sm font-semibold uppercase tracking-wider text-primary transition-all hover:glow-ring hover:bg-primary hover:text-primary-foreground"
             >
-              Explore Full Demo Folder
+              Contact for full mixset demo
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
