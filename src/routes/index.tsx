@@ -48,7 +48,14 @@ export const Route = createFileRoute("/")({
   component: Epk,
 });
 
-const GENRES = ["Afro House", "Melodic House & Techno", "Progressive House", "Indie Dance"];
+const GENRES = [
+  "Afro House",
+  "Organic House",
+  "House",
+  "Indie Dance",
+  "Progressive House",
+  "Melodic House & Techno",
+];
 
 const CURRENT = [
   {
@@ -198,23 +205,20 @@ function Epk() {
           <Reveal delay={80}>
             <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
               <p>
-                DJ Buba has been professionally active since 2020, with resident experience across Koh
-                Samui since 2022.
+                DJ Buba has been professionally DJing since 2020 and has held resident DJ positions on
+                Koh Samui since 2022. His musical foundation began at the age of 15 through playing bass
+                guitar, giving him a strong understanding of rhythm, harmony, groove, and song structure.
               </p>
               <p>
-                His musical foundation began at 15 through playing bass guitar, developing a strong
-                understanding of groove, harmony, rhythm and arrangement. That foundation continues to
-                shape the way he builds sets — with attention to phrasing, harmonic flow and the energy
+                This musical background shapes his approach to DJing, with a focus on harmonic mixing,
+                phrasing, groove, and natural transitions that allow each set to develop with the energy
                 of the room.
               </p>
               <p>
-                His sound moves through Afro House, House and Indie Dance, with influences from
-                Progressive House and Melodic Techno.
-              </p>
-              <p>
-                Rather than following a fixed formula, Buba adapts his selection and energy to the venue,
-                crowd and time of night — building a set that develops naturally from the first track to
-                the last.
+                His sound moves across Afro House, Organic House, House, and Indie Dance, with
+                influences from Progressive House and Melodic Techno. Buba focuses on creating dynamic
+                musical journeys that balance groove, atmosphere, and energy — adapting his selection
+                to the venue, crowd, and time of night.
               </p>
             </div>
           </Reveal>
