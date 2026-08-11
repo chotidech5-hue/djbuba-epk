@@ -192,22 +192,29 @@ function Epk() {
       {/* BIOGRAPHY */}
       <section className="mx-auto max-w-6xl px-5 py-24 sm:px-8">
         <Reveal>
-          <SectionTitle label="About the artist" title="Biography" />
+          <SectionTitle label="DJ / MUSIC SELECTOR — KOH SAMUI" title="Biography" />
         </Reveal>
         <div className="grid gap-10 md:grid-cols-[1.6fr_1fr]">
           <Reveal delay={80}>
             <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
               <p>
-                DJ Buba has been professionally DJing since 2020 and has held resident DJ positions on
-                Koh Samui since 2022. His musical foundation began at the age of 15 through playing bass
-                guitar, giving him a solid understanding of music theory, rhythm, harmony, and song
-                structure. This background naturally influences his approach to harmonic mixing,
-                phrasing, and creating seamless transitions.
+                DJ Buba has been professionally active since 2020, with resident experience across Koh
+                Samui since 2022.
               </p>
               <p>
-                Specializing in House, Afro House, Indie Dance, Progressive House, and Melodic Techno,
-                Buba focuses on building emotional journeys that keep the dancefloor engaged from start
-                to finish.
+                His musical foundation began at 15 through playing bass guitar, developing a strong
+                understanding of groove, harmony, rhythm and arrangement. That foundation continues to
+                shape the way he builds sets — with attention to phrasing, harmonic flow and the energy
+                of the room.
+              </p>
+              <p>
+                His sound moves through Afro House, House and Indie Dance, with influences from
+                Progressive House and Melodic Techno.
+              </p>
+              <p>
+                Rather than following a fixed formula, Buba adapts his selection and energy to the venue,
+                crowd and time of night — building a set that develops naturally from the first track to
+                the last.
               </p>
             </div>
           </Reveal>
