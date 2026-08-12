@@ -205,20 +205,19 @@ function Epk() {
           <Reveal delay={80}>
             <div className="space-y-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
               <p>
-                DJ Buba has been professionally DJing since 2020 and has held resident DJ positions on
-                Koh Samui since 2022. His musical foundation began at the age of 15 through playing bass
-                guitar, giving him a strong understanding of rhythm, harmony, groove, and song structure.
+                DJ BUBA has been performing professionally since 2020, with island residencies on Koh
+                Samui since 2022. A bass player since the age of 15, his musical background gives him a
+                strong foundation in rhythm, groove, phrasing, and musicality.
               </p>
               <p>
-                This musical background shapes his approach to DJing, with a focus on harmonic mixing,
-                phrasing, groove, and natural transitions that allow each set to develop with the energy
-                of the room.
+                His sets are built around reading the room and understanding how energy should develop
+                throughout the night. Rather than following a fixed formula, BUBA adapts his sound,
+                tempo, and intensity to suit the venue, the moment, and the crowd.
               </p>
               <p>
-                His sound moves across Afro House, Organic House, House, and Indie Dance, with
-                influences from Progressive House and Melodic Techno. Buba focuses on creating dynamic
-                musical journeys that balance groove, atmosphere, and energy — adapting his selection
-                to the venue, crowd, and time of night.
+                His sound moves through Afro House, Organic House, House, and Indie Dance — combining
+                warm grooves, organic textures, and driving rhythms to create sets that feel musical,
+                dynamic, and naturally connected to the atmosphere of the space.
               </p>
             </div>
           </Reveal>
