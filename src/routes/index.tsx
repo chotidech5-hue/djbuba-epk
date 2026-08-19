@@ -277,7 +277,7 @@ function Epk() {
             <AudioPlayer
               title="Afro Short Demo"
               subtitle="Afro House — DJ Buba"
-              src="https://www.dropbox.com/scl/fi/zqxduga9ep04gb4k0d1i2/Afro-short-Demo.mp3?rlkey=xiegb97n14663vi85ldvc2skw&st=rkrtxrvl&raw=1"
+              src="https://www.dropbox.com/scl/fi/foh3vprk32fjztibb90r8/Track-selected-BUBA.mp3?rlkey=yas7onbxymx4w2kjuqrnuuja2&st=dbn2258z&dl=0"
             />
           </Reveal>
           <Reveal delay={200}>
@@ -309,7 +309,7 @@ function Epk() {
               href="https://www.instagram.com/knowbuba.wav/"
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-8 py-4 text-sm font-semibold uppercase tracking-wider text-primary transition-all hover:glow-ring hover:bg-primary hover:text-primary-foreground"
+              className="group inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-8 py-4 text-sm font-semibold uppercase tracking-wider text-primary transition-[...]
             >
               Contact for full mixset demo
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -379,7 +379,7 @@ function Epk() {
                   rel="noreferrer"
                   className="group flex h-full items-center gap-4 rounded-2xl border border-border bg-surface-2/60 p-5 transition-all hover:-translate-y-1 hover:glow-ring"
                 >
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-primary/15 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-primary/15 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground"[...]
                     <c.icon className="h-5 w-5" />
                   </span>
                   <span className="min-w-0">
