@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Play, Pause, Loader2 } from "lucide-react";
+import { Play, Pause, Loader2, TriangleAlert } from "lucide-react";
 
 function format(t: number) {
   if (!Number.isFinite(t)) return "--:--";
@@ -20,6 +20,7 @@ export function AudioPlayer({
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [failed, setFailed] = useState(false);
   const [current, setCurrent] = useState(0);
   const [duration, setDuration] = useState(0);
 
@@ -28,37 +29,72 @@ export function AudioPlayer({
     if (!el) return;
     const onTime = () => setCurrent(el.currentTime);
     const onMeta = () => setDuration(el.duration);
-    const onEnd = () => setPlaying(false);
-    const onWaiting = () => setLoading(true);
-    const onPlaying = () => setLoading(false);
+    const onEnd = () => {
+      setPlaying(false);
+      setCurrent(0);
+    };
+    const onWaiting = () => {
+      if (!el.paused) setLoading(true);
+    };
+    const onPlaying = () => {
+      setLoading(false);
+      setPlaying(true);
+      setFailed(false);
+    };
+    const onPause = () => setPlaying(false);
+    const onError = () => {
+      setLoading(false);
+      setPlaying(false);
+      setFailed(true);
+    };
     el.addEventListener("timeupdate", onTime);
     el.addEventListener("loadedmetadata", onMeta);
     el.addEventListener("ended", onEnd);
     el.addEventListener("waiting", onWaiting);
     el.addEventListener("playing", onPlaying);
+    el.addEventListener("pause", onPause);
+    el.addEventListener("error", onError);
     return () => {
       el.removeEventListener("timeupdate", onTime);
       el.removeEventListener("loadedmetadata", onMeta);
       el.removeEventListener("ended", onEnd);
       el.removeEventListener("waiting", onWaiting);
       el.removeEventListener("playing", onPlaying);
+      el.removeEventListener("pause", onPause);
+      el.removeEventListener("error", onError);
     };
   }, []);
 
-  const toggle = async () => {
+  const start = async () => {
+    const el = audioRef.current;
+    if (!el) return;
+    setFailed(false);
+    setLoading(true);
+    try {
+      await el.play();
+      setPlaying(true);
+    } catch {
+      setFailed(true);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const retry = async () => {
+    const el = audioRef.current;
+    if (!el) return;
+    setFailed(false);
+    el.load();
+    await start();
+  };
+
+  const toggle = () => {
     const el = audioRef.current;
     if (!el) return;
     if (el.paused) {
-      setLoading(true);
-      try {
-        await el.play();
-        setPlaying(true);
-      } finally {
-        setLoading(false);
-      }
+      void start();
     } else {
       el.pause();
-      setPlaying(false);
     }
   };
 
@@ -71,8 +107,9 @@ export function AudioPlayer({
         <button
           type="button"
           onClick={toggle}
-          aria-label={playing ? "Pause" : "Play"}
-          className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-primary text-primary-foreground transition-transform hover:scale-105 active:scale-95"
+          disabled={loading}
+          aria-label={playing ? "Pause" : loading ? "Loading" : "Play"}
+          className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-primary text-primary-foreground transition-transform hover:scale-105 active:scale-95 disabled:cursor-progress disabled:opacity-80"
         >
           {loading ? (
             <Loader2 className="h-5 w-5 animate-spin" />
@@ -99,8 +136,10 @@ export function AudioPlayer({
             onChange={(e) => {
               const el = audioRef.current;
               if (!el) return;
-              el.currentTime = Number(e.target.value);
-              setCurrent(Number(e.target.value));
+              const value = Number(e.target.value);
+              if (el.readyState === 0) return;
+              el.currentTime = value;
+              setCurrent(value);
             }}
             className="mt-3 h-1.5 w-full cursor-pointer appearance-none rounded-full outline-none"
             style={{
@@ -111,6 +150,27 @@ export function AudioPlayer({
             <span>{format(current)}</span>
             <span>{format(duration)}</span>
           </div>
+          {failed && (
+            <p className="mt-3 flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground">
+              <TriangleAlert className="h-3.5 w-3.5 shrink-0 text-primary" />
+              <span>Couldn&apos;t play this demo.</span>
+              <button
+                type="button"
+                onClick={() => void retry()}
+                className="text-primary underline"
+              >
+                Retry
+              </button>
+              <a
+                href={src}
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary underline"
+              >
+                Open track ↗
+              </a>
+            </p>
+          )}
         </div>
       </div>
     </div>

@@ -277,7 +277,7 @@ function Epk() {
             <AudioPlayer
               title="Afro Short Demo"
               subtitle="Afro House — DJ Buba"
-              src="https://www.dropbox.com/scl/fi/foh3vprk32fjztibb90r8/Track-selected-BUBA.mp3?rlkey=yas7onbxymx4w2kjuqrnuuja2&st=dbn2258z&dl=0"
+              src="https://www.dropbox.com/scl/fi/zqxduga9ep04gb4k0d1i2/Afro-short-Demo.mp3?rlkey=xiegb97n14663vi85ldvc2skw&st=rkrtxrvl&raw=1"
             />
           </Reveal>
           <Reveal delay={200}>
