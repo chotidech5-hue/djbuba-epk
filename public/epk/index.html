@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ BUBA — Electronic Press Kit | Afro House & Melodic Techno</title>
+  <meta name="description" content="Official EPK of DJ BUBA — Koh Samui based DJ playing Afro House, Melodic House & Techno, Progressive House and Indie Dance. Bio, residencies, demo sets and bookings.">
+  <meta property="og:title" content="DJ BUBA — Electronic Press Kit | Afro House & Melodic Techno">
+  <meta property="og:description" content="Official EPK of DJ BUBA — Koh Samui based DJ playing Afro House, Melodic House & Techno, Progressive House and Indie Dance. Bio, residencies, demo sets and bookings.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --bg-surface: #111111;
+      --bg-surface-2: #1a1a1a;
+      --fg: #f5f5f5;
+      --fg-muted: #a0a0a0;
+      --primary: #d4a853;
+      --primary-fg: #0a0a0a;
+      --border: #2a2a2a;
+      --cyan: #22d3ee;
+      --gold: #d4a853;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+    @media (min-width: 640px) { .container { padding: 0 2rem; } }
+    .section-label { font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--fg-muted); font-weight: 500; }
+    .section-title { font-size: 2rem; font-weight: 800; text-transform: uppercase; margin-top: 0.75rem; }
+    @media (min-width: 640px) { .section-title { font-size: 2.5rem; } }
+    @media (min-width: 768px) { .section-title { font-size: 3rem; } }
+    .section-line { height: 2px; width: 6rem; background: var(--primary); margin-top: 1.25rem; }
+    .gold { color: var(--gold); }
+
+    /* HERO */
+    .hero { position: relative; min-height: 92vh; display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--border); }
+    .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; opacity: 0.4; }
+    .hero-gradient { position: absolute; inset: 0; background: linear-gradient(to top, var(--bg), rgba(10,10,10,0.85) 30%, rgba(10,10,10,0.4)); }
+    .hero-content { position: relative; z-index: 1; padding-bottom: 4rem; }
+    @media (min-width: 640px) { .hero-content { padding-bottom: 6rem; } }
+    .hero h1 { font-size: 3.5rem; font-weight: 800; text-transform: uppercase; line-height: 0.85; margin-top: 1rem; }
+    @media (min-width: 640px) { .hero h1 { font-size: 5rem; } }
+    @media (min-width: 768px) { .hero h1 { font-size: 8rem; } }
+    .hero-sub { font-size: 0.875rem; letter-spacing: 0.3em; text-transform: uppercase; margin-top: 1.25rem; opacity: 0.8; }
+    @media (min-width: 640px) { .hero-sub { font-size: 1rem; } }
+    .genres { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; }
+    .genre-tag { border: 1px solid var(--border); background: rgba(26,26,26,0.7); padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; backdrop-filter: blur(8px); }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.5rem; }
+    .btn-primary { background: var(--primary); color: var(--primary-fg); padding: 0.75rem 1.75rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; transition: transform 0.2s; display: inline-block; }
+    .btn-primary:hover { transform: scale(1.03); }
+    .btn-outline { border: 1px solid var(--border); padding: 0.75rem 1.75rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; transition: background 0.2s; display: inline-block; }
+    .btn-outline:hover { background: var(--bg-surface-2); }
+
+    /* BIO */
+    .bio { padding: 6rem 0; }
+    .bio-grid { display: grid; gap: 2.5rem; }
+    @media (min-width: 768px) { .bio-grid { grid-template-columns: 1.6fr 1fr; } }
+    .bio-text p { font-size: 1rem; line-height: 1.75; color: var(--fg-muted); margin-bottom: 1.5rem; }
+    @media (min-width: 640px) { .bio-text p { font-size: 1.125rem; } }
+    .bio-img { border-radius: 1rem; border: 1px solid var(--border); overflow: hidden; }
+    .bio-img img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* RESIDENCIES */
+    .residencies { border-top: 1px solid var(--border); background: rgba(17,17,17,0.4); padding: 6rem 0; }
+    .res-grid { display: grid; gap: 2.5rem; }
+    @media (min-width: 1024px) { .res-grid { grid-template-columns: 1fr 1fr; } }
+    .res-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3em; margin-bottom: 1.25rem; }
+    .res-label.active { color: var(--primary); }
+    .venue-card { border-radius: 1rem; padding: 1.25rem; border: 1px solid var(--border); background: var(--bg-surface-2); transition: transform 0.3s; margin-bottom: 1rem; }
+    .venue-card:hover { transform: translateY(-4px); }
+    .venue-card h3 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+    .venue-card p { font-size: 0.875rem; color: var(--fg-muted); margin-top: 0.5rem; }
+    .venue-card .disc { color: var(--primary); margin-right: 0.5rem; }
+    .venue-card.muted .disc { color: var(--fg-muted); }
+
+    /* AUDIO */
+    .listen { padding: 6rem 0; }
+    .listen-grid { display: grid; gap: 1.5rem; }
+    @media (min-width: 1024px) { .listen-grid { grid-template-columns: 1fr 1fr; } }
+    .audio-card { background: var(--bg-surface-2); border-radius: 1rem; padding: 1.25rem; }
+    .audio-row { display: flex; align-items: center; gap: 1rem; }
+    .play-btn { width: 3.5rem; height: 3.5rem; border-radius: 50%; background: var(--primary); color: var(--primary-fg); border: none; cursor: pointer; display: grid; place-items: center; flex-shrink: 0; font-size: 1.25rem; transition: transform 0.2s; }
+    .play-btn:hover { transform: scale(1.05); }
+    .audio-info { min-width: 0; flex: 1; }
+    .audio-title { font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .audio-sub { font-size: 0.75rem; color: var(--fg-muted); margin-top: 0.125rem; }
+    .seek-bar { width: 100%; margin-top: 0.75rem; height: 4px; -webkit-appearance: none; appearance: none; background: linear-gradient(to right, var(--primary) 0%, var(--border) 0%); border-radius: 9999px; outline: none; cursor: pointer; }
+    .seek-bar::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; border-radius: 50%; background: var(--primary); cursor: pointer; }
+    .seek-bar::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: var(--primary); cursor: pointer; border: none; }
+    .audio-times { display: flex; justify-content: space-between; font-size: 0.6875rem; color: var(--fg-muted); margin-top: 0.5rem; font-variant-numeric: tabular-nums; }
+    .audio-msg { display: none; margin-top: 0.75rem; font-size: 0.75rem; color: var(--fg-muted); }
+    .audio-card.has-msg .audio-msg { display: block; }
+    .audio-msg a { color: var(--primary); text-decoration: underline; }
+    .play-btn[disabled] { opacity: 0.75; cursor: progress; }
+    .demo-btn { display: flex; justify-content: center; margin-top: 2rem; }
+    .demo-btn a { display: inline-flex; align-items: center; gap: 0.5rem; border: 1px solid rgba(212,168,83,0.4); background: rgba(212,168,83,0.1); padding: 1rem 2rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); transition: transform 0.2s; }
+    .demo-btn a:hover { transform: scale(1.02); }
+
+    /* GALLERY */
+    .gallery { padding: 6rem 0; }
+    .gallery-grid { display: grid; gap: 1rem; }
+    @media (min-width: 640px) { .gallery-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1024px) { .gallery-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .gallery-item { overflow: hidden; border-radius: 1rem; border: 1px solid var(--border); }
+    .gallery-item img { width: 100%; aspect-ratio: 3/4; object-fit: cover; transition: transform 0.5s; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .flyers-section { margin-top: 4rem; }
+    .flyer-card { background: var(--bg-surface-2); border-radius: 1rem; padding: 0.75rem; }
+    .flyer-card img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 0.75rem; }
+
+    /* CONTACT */
+    .contact { border-top: 1px solid var(--border); background: rgba(17,17,17,0.4); padding: 6rem 0; }
+    .contact-desc { max-width: 40rem; font-size: 1rem; line-height: 1.75; color: var(--fg-muted); margin-top: 1rem; }
+    @media (min-width: 640px) { .contact-desc { font-size: 1.125rem; } }
+    .contact-grid { display: grid; gap: 1rem; margin-top: 3rem; }
+    @media (min-width: 640px) { .contact-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .contact-card { display: flex; align-items: center; gap: 1rem; padding: 1.25rem; border-radius: 1rem; border: 1px solid var(--border); background: rgba(26,26,26,0.6); transition: transform 0.3s; }
+    .contact-card:hover { transform: translateY(-4px); }
+    .contact-icon { width: 2.75rem; height: 2.75rem; border-radius: 50%; background: rgba(212,168,83,0.15); color: var(--primary); display: grid; place-items: center; flex-shrink: 0; font-size: 1.25rem; }
+    .contact-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--fg-muted); }
+    .contact-value { font-size: 0.875rem; font-weight: 600; }
+    .footer-text { margin-top: 4rem; text-align: center; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3em; color: var(--fg-muted); }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="images/buba-2.png" alt="DJ Buba performing on Koh Samui" class="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="container hero-content">
+      <p class="section-label">Electronic Press Kit</p>
+      <h1><span class="gold">DJ Buba</span></h1>
+      <p class="hero-sub">Harmony, Groove &amp; Seamless Flow</p>
+      <div class="genres">
+        <span class="genre-tag">Afro House</span>
+        <span class="genre-tag">Organic House</span>
+        <span class="genre-tag">House</span>
+        <span class="genre-tag">Indie Dance</span>
+        <span class="genre-tag">Progressive House</span>
+        <span class="genre-tag">Melodic House & Techno</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#listen" class="btn-primary">Listen</a>
+        <a href="#contact" class="btn-outline">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIOGRAPHY -->
+  <section class="bio">
+    <div class="container">
+      <p class="section-label">DJ / Music Selector — Koh Samui</p>
+      <h2 class="section-title">Biography</h2>
+      <div class="section-line"></div>
+      <div class="bio-grid" style="margin-top: 2.5rem;">
+        <div class="bio-text">
+          <p>DJ BUBA has been performing professionally since 2020, with island residencies on Koh Samui since 2022. A bass player since the age of 15, his musical background gives him a strong foundation in rhythm, groove, phrasing, and musicality.</p>
+          <p>His sets are built around reading the room and understanding how energy should develop throughout the night. Rather than following a fixed formula, BUBA adapts his sound, tempo, and intensity to suit the venue, the moment, and the crowd.</p>
+          <p>His sound moves through Afro House, Organic House, House, and Indie Dance — combining warm grooves, organic textures, and driving rhythms to create sets that feel musical, dynamic, and naturally connected to the atmosphere of the space.</p>
+        </div>
+        <div>
+          <div class="bio-img">
+            <img src="images/buba-8.png" alt="DJ Buba press portrait in black shirt">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESIDENCIES -->
+  <section class="residencies">
+    <div class="container">
+      <p class="section-label">Where he plays</p>
+      <h2 class="section-title">Residencies</h2>
+      <div class="section-line"></div>
+      <div class="res-grid" style="margin-top: 2.5rem;">
+        <div>
+          <p class="res-label active">Current</p>
+          <div class="venue-card"><span class="disc">◆</span><h3>Ark Bar Beach Club</h3><p>Koh Samui's legendary, world-famous beachfront party landmark.</p></div>
+          <div class="venue-card"><span class="disc">◆</span><h3>Love Beach Club</h3><p>The island's premier beachfront venue known for pool parties and luxury vibes.</p></div>
+          <div class="venue-card"><span class="disc">◆</span><h3>CU Club & Restaurant</h3><p>Chaweng's ultimate hotspot for authentic underground house and techno.</p></div>
+          <div class="venue-card"><span class="disc">◆</span><h3>Lub d Koh Samui</h3><p>Award-winning social beachfront destination featuring a world-class infinity pool.</p></div>
+        </div>
+        <div>
+          <p class="res-label">Past</p>
+          <div class="venue-card muted"><span class="disc">◆</span><h3>Cabanas</h3><p>Premium 5-star beachfront hotel and luxury beach club in the heart of Chaweng.</p></div>
+          <div class="venue-card muted"><span class="disc">◆</span><h3>Socialtel</h3><p>Vibrant, social-first party hotel catering to a modern, lifestyle-driven global crowd.</p></div>
+          <div class="venue-card muted"><span class="disc">◆</span><h3>The Green Mango Club</h3><p>Chaweng's legendary nightlife epicenter and iconic clubbing institution.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTEN -->
+  <section id="listen" class="listen" style="scroll-margin-top: 4rem;">
+    <div class="container">
+      <p class="section-label">Sound</p>
+      <h2 class="section-title">Listen / Demo Sets</h2>
+      <div class="section-line"></div>
+      <div class="listen-grid" style="margin-top: 2.5rem;">
+        <div class="audio-card" id="player1"></div>
+        <div class="audio-card" id="player2"></div>
+        <div class="audio-card" id="player3"></div>
+        <div class="audio-card" id="player4"></div>
+      </div>
+      <div class="demo-btn">
+        <a href="https://www.instagram.com/knowbuba.wav/" target="_blank" rel="noreferrer">Contact for full mixset demo ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery" style="scroll-margin-top: 4rem;">
+    <div class="container">
+      <p class="section-label">On the decks</p>
+      <h2 class="section-title">Live Gallery</h2>
+      <div class="section-line"></div>
+      <div class="gallery-grid" style="margin-top: 2.5rem;">
+        <div class="gallery-item"><img src="images/buba-2.png" alt="DJ Buba playing at Love Beach Club" loading="lazy"></div>
+        <div class="gallery-item"><img src="images/buba-3.png" alt="DJ Buba on the decks at night" loading="lazy"></div>
+        <div class="gallery-item"><img src="images/buba-4.png" alt="DJ Buba at #Love Beach Club neon booth" loading="lazy"></div>
+        <div class="gallery-item"><img src="images/buba-live-11.jpg" alt="DJ Buba mixing under red club lights" loading="lazy"></div>
+        <div class="gallery-item"><img src="images/buba-live-12.jpg" alt="DJ Buba behind the Pioneer DJ controller" loading="lazy"></div>
+      </div>
+      <div class="flyers-section">
+        <p class="section-label">Events</p>
+        <h2 class="section-title">Flyers & Promo</h2>
+        <div class="section-line"></div>
+        <div class="gallery-grid" style="margin-top: 2.5rem;">
+          <div class="flyer-card"><img src="images/buba-5.png" alt="Love Rosé Saturdays flyer" loading="lazy"></div>
+          <div class="flyer-card"><img src="images/buba-7.png" alt="Radio Samui Open Deck at Black Box flyer" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact" class="contact" style="scroll-margin-top: 4rem;">
+    <div class="container">
+      <p class="section-label">Get in touch</p>
+      <h2 class="section-title">Bookings & Contact</h2>
+      <div class="section-line"></div>
+      <p class="contact-desc">From mainstage beach energy to deep underground club nights, DJ Buba continuously delivers unforgettable soundscapes through precision, passion, and pure musicality.</p>
+      <div class="contact-grid">
+        <a href="https://wa.me/66970745261" target="_blank" rel="noreferrer" class="contact-card">
+          <span class="contact-icon">💬</span>
+          <span><span class="contact-label">WhatsApp</span><br><span class="contact-value">+66 97 074 5261</span></span>
+        </a>
+        <a href="https://www.instagram.com/knowbuba.wav/" target="_blank" rel="noreferrer" class="contact-card">
+          <span class="contact-icon">📷</span>
+          <span><span class="contact-label">Instagram</span><br><span class="contact-value">@knowbuba.wav</span></span>
+        </a>
+        <a href="mailto:Chotidech.y@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <span><span class="contact-label">Email</span><br><span class="contact-value">Chotidech.y@gmail.com</span></span>
+        </a>
+      </div>
+      <p class="footer-text">DJ Buba — Koh Samui, Thailand</p>
+    </div>
+  </footer>
+
+  <script>
+    const tracks = [
+      { id: 'player1', title: 'Quick mix selected - BUBA', sub: 'Quick Mix — DJ Buba', src: 'https://www.dropbox.com/scl/fi/foh3vprk32fjztibb90r8/Track-selected-BUBA.mp3?rlkey=yas7onbxymx4w2kjuqrnuuja2&st=rvdsfh4p&raw=1' },
+      { id: 'player2', title: 'Indie Dance Short Demo', sub: 'Indie Dance — DJ Buba', src: 'https://www.dropbox.com/scl/fi/lrreylvfylfrtxo4y67pl/Indie-dance-short-demo.mp3?rlkey=haox9e0pdt13dm86iikmng7p3&st=vqjrfcb7&raw=1' },
+      { id: 'player3', title: 'Day Set Afro', sub: 'Afro House Day Time — DJ Buba Demo', src: 'https://www.dropbox.com/scl/fi/8nifvgrik4ydtq53hdoki/afro-house-day-time-DJ-Buba-Demo.mp3?rlkey=15p7sb5siqmt543wwftmr412a&raw=1' },
+      { id: 'player4', title: 'Deep House Demo', sub: 'Deep House — Buba', src: 'https://www.dropbox.com/scl/fi/7qdcc0lsmso3gmpvt2s53/Deep-House-Buba.mp3?rlkey=t9fa7awd7ovz2tozoslr6uhal&raw=1' },
+    ];
+
+    function fmt(s) {
+      if (!isFinite(s)) return '--:--';
+      const m = Math.floor(s / 60);
+      const sec = Math.floor(s % 60);
+      return m + ':' + String(sec).padStart(2, '0');
+    }
+
+    tracks.forEach(t => {
+      const el = document.getElementById(t.id);
+      el.innerHTML = `
+        <audio data-src="${t.src}" preload="metadata"></audio>
+        <div class="audio-row">
+          <button class="play-btn" type="button" aria-label="Play">▶</button>
+          <div class="audio-info">
+            <div class="audio-title">${t.title}</div>
+            <div class="audio-sub">${t.sub}</div>
+          </div>
+        </div>
+        <input type="range" class="seek-bar" min="0" max="0" step="0.1" value="0" aria-label="Seek">
+        <div class="audio-times"><span class="cur">0:00</span><span class="dur">--:--</span></div>
+        <p class="audio-msg"></p>
+      `;
+      const audio = el.querySelector('audio');
+      const btn = el.querySelector('.play-btn');
+      const seek = el.querySelector('.seek-bar');
+      const curEl = el.querySelector('.cur');
+      const durEl = el.querySelector('.dur');
+      const msgEl = el.querySelector('.audio-msg');
+
+      // Load the metadata up front so the duration and seek bar are populated
+      // before the first click (otherwise the card looks dead).
+      audio.preload = 'metadata';
+      audio.src = t.src;
+
+      function setMsg(html) {
+        if (html) { msgEl.innerHTML = html; el.classList.add('has-msg'); }
+        else { msgEl.innerHTML = ''; el.classList.remove('has-msg'); }
+      }
+
+      function setState(state) {
+        if (state === 'loading') {
+          btn.textContent = '⋯';
+          btn.disabled = true;
+          btn.setAttribute('aria-label', 'Loading');
+        } else {
+          btn.disabled = false;
+          btn.textContent = state === 'playing' ? '⏸' : '▶';
+          btn.setAttribute('aria-label', state === 'playing' ? 'Pause' : 'Play');
+        }
+      }
+
+      btn.addEventListener('click', async () => {
+        if (audio.paused) {
+          setMsg('');
+          setState('loading');
+          try {
+            await audio.play();
+            setState('playing');
+          } catch (err) {
+            setState('idle');
+            showError();
+          }
+        } else {
+          audio.pause();
+        }
+      });
+
+      function showError() {
+        setMsg(
+          'This demo could not be played here. ' +
+          '<a href="' + t.src + '" target="_blank" rel="noreferrer">Open the track ↗</a>'
+        );
+      }
+
+      audio.addEventListener('loadedmetadata', () => {
+        seek.max = isFinite(audio.duration) ? audio.duration : 0;
+        durEl.textContent = fmt(audio.duration);
+        setMsg('');
+      });
+      audio.addEventListener('timeupdate', () => {
+        curEl.textContent = fmt(audio.currentTime);
+        const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+        seek.style.background = `linear-gradient(to right, var(--primary) ${pct}%, var(--border) ${pct}%)`;
+      });
+      audio.addEventListener('playing', () => { setMsg(''); setState('playing'); });
+      audio.addEventListener('waiting', () => { if (!audio.paused) setState('loading'); });
+      audio.addEventListener('pause', () => setState('idle'));
+      audio.addEventListener('ended', () => { setState('idle'); audio.currentTime = 0; });
+      audio.addEventListener('error', () => { setState('idle'); showError(); });
+
+      seek.addEventListener('input', () => {
+        if (audio.readyState === 0 && audio.paused) return;
+        audio.currentTime = Number(seek.value);
+      });
+    });
+  </script>
+</body>
+</html>
