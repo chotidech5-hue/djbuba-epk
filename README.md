@@ -49,25 +49,21 @@ For Buba, DJing goes far beyond simply playing tracks—it is about curating emo
 
 เดียวจะแนบรูป ให้อีกรอบ
 
-This project was built with [Lovable](https://lovable.dev).
+## Live site
 
-**Live app**: https://djbuba-epk.lovable.app
+The EPK page is published with GitHub Pages: **https://chotidech5-hue.github.io/djbuba-epk/**
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/bdffff2d-ca74-47d9-a798-234b38be5b2f).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Its source is the standalone page in `public/epk/` (`index.html` plus `images/`) — no build step involved. `.github/workflows/pages.yml` republishes it on every push to `main`, so editing that folder and pushing is all it takes to update the live page. To check it locally, open `public/epk/index.html` in a browser.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+You need Node.js 22+ and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+git clone https://github.com/chotidech5-hue/djbuba-epk.git
+cd djbuba-epk
+npm install
 npm run dev
 ```
+
+The dev server runs on http://localhost:8080. `npm run build` produces a self-contained server bundle in `.output/` (Nitro), and `npm run preview` serves the build locally.

@@ -7,10 +7,9 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import type { ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
@@ -37,9 +36,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -79,16 +75,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "DJ BUBA — Electronic Press Kit | Afro House & Melodic Techno" },
       { name: "description", content: "Official EPK of DJ BUBA — Koh Samui based DJ playing Afro House, Melodic House & Techno, Progressive House and Indie Dance. Bio, residencies, demo sets and bookings." },
-      { name: "author", content: "Lovable" },
+      { name: "author", content: "DJ Buba" },
       { property: "og:title", content: "DJ BUBA — Electronic Press Kit | Afro House & Melodic Techno" },
       { property: "og:description", content: "Official EPK of DJ BUBA — Koh Samui based DJ playing Afro House, Melodic House & Techno, Progressive House and Indie Dance. Bio, residencies, demo sets and bookings." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "DJ BUBA — Electronic Press Kit | Afro House & Melodic Techno" },
       { name: "twitter:description", content: "Official EPK of DJ BUBA — Koh Samui based DJ playing Afro House, Melodic House & Techno, Progressive House and Indie Dance. Bio, residencies, demo sets and bookings." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/98f68c77-2d12-418b-b124-583f4e2785df/id-preview-18333477--bdffff2d-ca74-47d9-a798-234b38be5b2f.lovable.app-1785516902253.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/98f68c77-2d12-418b-b124-583f4e2785df/id-preview-18333477--bdffff2d-ca74-47d9-a798-234b38be5b2f.lovable.app-1785516902253.png" },
+      { property: "og:image", content: "https://chotidech5-hue.github.io/djbuba-epk/images/buba-2.png" },
+      { name: "twitter:image", content: "https://chotidech5-hue.github.io/djbuba-epk/images/buba-2.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
